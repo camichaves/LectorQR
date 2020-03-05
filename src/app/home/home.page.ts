@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ToastController, Platform } from '@ionic/angular';
 import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
+import { HistorialService} from '../services/historial.service';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,11 @@ import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 })
 export class HomePage {
 
+
   scannedcode = '' ;
   elementType = '';
   constructor(private barcodeScanner: BarcodeScanner , private toastController: ToastController,
-              private platform: Platform) {
+              private platform: Platform, private historialService: HistorialService) {
   }
 
   escanear() {
@@ -20,6 +22,7 @@ export class HomePage {
     if (! this.platform.is('cordova')) {
       this.scannedcode = 'https://google.com.ar';
       this.elementType = 'QRCODE';
+      this.historialService.agregarHistorial(this.scannedcode);
       this.presentToast();
       return;
     }
@@ -27,6 +30,9 @@ export class HomePage {
         barcoData => {
           this.scannedcode = barcoData.text;
           this.elementType = barcoData.format;
+          if (!barcoData.cancelled && barcoData.text != null) {
+            this.historialService.agregarHistorial(barcoData.text);
+          }
           this.presentToast();
         }
     );
@@ -40,6 +46,7 @@ export class HomePage {
     toast.present();
     console.log(' Escaneado: ' + this.scannedcode + '.- Formato: ' + this.elementType);
   }
+
 
 
 }

@@ -13,6 +13,9 @@ import { NgxQRCodeModule} from 'ngx-qrcode2';
 import { ToastController } from '@ionic/angular';
 import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 
+import { HistorialService} from './services/historial.service';
+import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -22,6 +25,8 @@ import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
     SplashScreen,
       ToastController,
       BarcodeScanner,
+      HistorialService,
+      InAppBrowser,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
