@@ -16,10 +16,21 @@ import { BarcodeScanner} from '@ionic-native/barcode-scanner/ngx';
 import { HistorialService} from './services/historial.service';
 import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
 
+import { AgmCoreModule } from '@agm/core';
+import {MapaPage} from './pages/mapa/mapa.page';
+import {MapaPageModule} from './pages/mapa/mapa.module';
+import { Contacts } from '@ionic-native/contacts/ngx';
+
+
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, NgxQRCodeModule],
+  entryComponents: [ MapaPage],
+  imports: [BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    NgxQRCodeModule,
+      MapaPageModule
+  ],
   providers: [
     StatusBar,
     SplashScreen,
@@ -27,6 +38,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser/ngx';
       BarcodeScanner,
       HistorialService,
       InAppBrowser,
+      Contacts,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

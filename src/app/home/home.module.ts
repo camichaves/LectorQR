@@ -5,8 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import {MapaPage} from '../pages/mapa/mapa.page';
+import {MapaPageModule} from '../pages/mapa/mapa.module';
 
 @NgModule({
+  entryComponents: [ MapaPage],
   imports: [
     CommonModule,
     FormsModule,
@@ -16,7 +19,8 @@ import { HomePage } from './home.page';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+      MapaPageModule
   ],
   declarations: [HomePage]
 })

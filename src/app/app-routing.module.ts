@@ -8,10 +8,10 @@ const routes: Routes = [
     path: 'guardados',
     loadChildren: () => import('./pages/guardados/guardados.module').then( m => m.GuardadosPageModule)
   },
-  {
-    path: 'mapa',
-    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
-  },
+  // {
+  //   path: 'mapa',
+  //   loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
+  // },
   {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)

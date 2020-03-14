@@ -20,11 +20,11 @@ export class HomePage {
   escanear() {
 
     if (! this.platform.is('cordova')) {
-      this.scannedcode = 'https://google.com.ar';
-      this.elementType = 'QRCODE';
-      this.historialService.agregarHistorial(this.scannedcode);
-      this.presentToast();
-      return;
+       this.scannedcode = 'MATMSG:TO:camichavesthg@gmail.com;SUB:Holis;BODY:Tkm bebe;;';
+      // this.elementType = 'mapa';
+       this.historialService.agregarHistorial(this.scannedcode);
+       this.presentToast();
+       return;
     }
     this.barcodeScanner.scan().then(
         barcoData => {

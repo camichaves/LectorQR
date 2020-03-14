@@ -3,15 +3,15 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MapaPage } from './mapa.page';
 
-const routes: Routes = [
-  {
-    path: '',
-    component: MapaPage
-  }
-];
+// const routes: Routes = [
+//   {
+//     path: '/mapa',
+//     component: MapaPage
+//   }
+// ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  // imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class MapaPageRoutingModule {}
