@@ -44,17 +44,7 @@ export class HistorialService {
     }
 
   }
-  private  sendEmail(texto: string){
-    // variable to, subject y body
-    // var coordsArray = texto.split(';');
-    // let to = coordsArray[0].replace('MATMSG:TO:', '');
-    // console.log('to: ' + to);
-    // let subject = coordsArray[1].replace('SUB:', '');
-    // console.log('subject: ' + subject);
-    // let body = coordsArray[2].replace('BODY:', '');
-    // console.log('body: ' + body);
-    // console.log('mailto:' + to + '?Subject=' + subject + '&Body=' + body);
-    // let url1 = 'mailto:' + to + '?Subject=' + subject + '&Body=' + body;
+  private  sendEmail( texto: string) {
     let url1 = texto;
     url1 = url1.replace('MATMSG:TO:', 'mailto:');
     url1 = url1.replace(';SUB:', '?Subject=');

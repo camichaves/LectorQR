@@ -9,14 +9,10 @@ import {ModalController} from '@ionic/angular';
 })
 export class MapaPage implements AfterContentInit {
   @Input() coords;
-  private API = 'place';
-  private KEY = 'AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk';
-  // private lat = '-31.537034492705484';
-  // private lon = '-68.53237502563692';
   lat: number ;
-  lng: number ;
+  lng: number  ;
   zoom = 15;
-  // https://www.google.com/maps/embed/v1/place?key=AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk&q=-31.537034492705484,-68.53237502563692&zoom=18
+
 
   constructor( private modalController: ModalController) { }
   getLocation() {
@@ -41,11 +37,9 @@ export class MapaPage implements AfterContentInit {
     console.log('Latitud: ' + coordsArray[0].replace('geo:', '') );
     console.log('Longitud: ' + coordsArray[1]  );
     // tslint:disable-next-line:radix
-    this. lat = parseFloat(coordsArray[0].replace('geo:', '')); //-31.539989700000003
+    this. lat = parseFloat(coordsArray[0].replace('geo:', ''));
     // tslint:disable-next-line:radix
-    this.lng = parseFloat(coordsArray[1]); //-68.558084
-  }
-
+    this.lng = parseFloat(coordsArray[1]); }
 
     cerrarModal() {
       this.modalController.dismiss();
@@ -53,7 +47,6 @@ export class MapaPage implements AfterContentInit {
 
   ngAfterContentInit(): void {
     this.cargaMapa();
-    // this.getLocation();
   }
 
 }

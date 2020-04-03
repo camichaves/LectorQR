@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
      QRAPP
@@ -7,5 +7,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-button expand="full" color="primary" (click)="escanear()">Escanear</ion-button>
+  <ion-fab vertical="center" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="escanear()" style="width: 170px; height: 170px">
+      Escanear
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

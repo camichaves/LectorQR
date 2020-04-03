@@ -451,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button (click)=\"cerrarModal()\">\r\n        <ion-icon name=\"arrow-back-outline\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <ion-title>Mapa</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\">\r\n    <agm-marker  [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n  </agm-map>\r\n</ion-content>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button (click)=\"cerrarModal()\">\r\n        <ion-icon name=\"arrow-back-outline\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <ion-title>Mapa</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\" style=\"height: 100%\">\r\n    <agm-marker  [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n  </agm-map>\r\n</ion-content>\r\n\r\n");
 
 /***/ }),
 
@@ -824,6 +824,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_mapa_mapa_page__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/mapa/mapa.page */ "./src/app/pages/mapa/mapa.page.ts");
 /* harmony import */ var _pages_mapa_mapa_module__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/mapa/mapa.module */ "./src/app/pages/mapa/mapa.module.ts");
 /* harmony import */ var _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ionic-native/contacts/ngx */ "./node_modules/@ionic-native/contacts/ngx/index.js");
+/* harmony import */ var _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @ionic-native/admob-free/ngx */ "./node_modules/@ionic-native/admob-free/ngx/index.js");
+
 
 
 
@@ -861,6 +863,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _services_historial_service__WEBPACK_IMPORTED_MODULE_11__["HistorialService"],
             _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_12__["InAppBrowser"],
             _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_15__["Contacts"],
+            _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_16__["AdMobFree"],
             { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
         ],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
@@ -895,6 +898,9 @@ class ScanData {
         }
         else if (texto.startsWith('BEGIN:VCARD')) {
             this.tipo = 'contacto';
+        }
+        else if (texto.startsWith('MATMSG:')) {
+            this.tipo = 'email';
         }
     }
 }
@@ -993,7 +999,7 @@ MapaPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("agm-map {\n  height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvbWFwYS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxccGFnZXNcXG1hcGFcXG1hcGEucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9tYXBhL21hcGEucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UsYUFBQTtBQ0FGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbWFwYS9tYXBhLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5hZ20tbWFwIHtcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG59XHJcbiIsImFnbS1tYXAge1xuICBoZWlnaHQ6IDMwMHB4O1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("agm-map {\n  height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvbWFwYS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxccGFnZXNcXG1hcGFcXG1hcGEucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9tYXBhL21hcGEucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbWFwYS9tYXBhLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImFnbS1tYXAge1xyXG4gIGhlaWdodDogMzAwcHg7XHJcbn1cclxuXHJcblxyXG4iLCJhZ20tbWFwIHtcbiAgaGVpZ2h0OiAzMDBweDtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1014,11 +1020,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let MapaPage = class MapaPage {
-    // https://www.google.com/maps/embed/v1/place?key=AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk&q=-31.537034492705484,-68.53237502563692&zoom=18
     constructor(modalController) {
         this.modalController = modalController;
-        this.API = 'place';
-        this.KEY = 'AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk';
         this.zoom = 15;
     }
     getLocation() {
@@ -1043,16 +1046,15 @@ let MapaPage = class MapaPage {
         console.log('Latitud: ' + coordsArray[0].replace('geo:', ''));
         console.log('Longitud: ' + coordsArray[1]);
         // tslint:disable-next-line:radix
-        this.lat = parseFloat(coordsArray[0].replace('geo:', '')); //-31.539989700000003
+        this.lat = parseFloat(coordsArray[0].replace('geo:', ''));
         // tslint:disable-next-line:radix
-        this.lng = parseFloat(coordsArray[1]); //-68.558084
+        this.lng = parseFloat(coordsArray[1]);
     }
     cerrarModal() {
         this.modalController.dismiss();
     }
     ngAfterContentInit() {
         this.cargaMapa();
-        // this.getLocation();
     }
 };
 MapaPage.ctorParameters = () => [
@@ -1092,6 +1094,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/fesm2015/ionic-angular.js");
 /* harmony import */ var _pages_mapa_mapa_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/mapa/mapa.page */ "./src/app/pages/mapa/mapa.page.ts");
 /* harmony import */ var _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/contacts/ngx */ "./node_modules/@ionic-native/contacts/ngx/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
@@ -1100,12 +1104,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let HistorialService = class HistorialService {
-    constructor(inAppBrowser, modalController, contacts, platform, toastController) {
+    constructor(inAppBrowser, modalController, contacts, platform, toastController, router) {
         this.inAppBrowser = inAppBrowser;
         this.modalController = modalController;
         this.contacts = contacts;
         this.platform = platform;
         this.toastController = toastController;
+        this.router = router;
         this.historial = [];
     }
     agregarHistorial(texto) {
@@ -1127,9 +1132,21 @@ let HistorialService = class HistorialService {
             case 'contacto':
                 this.crearContacto(scanData.info);
                 break;
+            case 'email':
+                this.sendEmail(scanData.info);
+                break;
             default:
                 console.error('Tipo no soportado');
         }
+    }
+    sendEmail(texto) {
+        let url1 = texto;
+        url1 = url1.replace('MATMSG:TO:', 'mailto:');
+        url1 = url1.replace(';SUB:', '?Subject=');
+        url1 = url1.replace(';BODY:', '&Body=');
+        url1 = url1.replace(' ', '%20');
+        url1 = url1.replace(';;', '');
+        this.inAppBrowser.create(url1, '_systems');
     }
     crearContacto(texto) {
         let campos = this.parse_vcard(texto);
@@ -1225,14 +1242,16 @@ HistorialService.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"] },
     { type: _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__["Contacts"] },
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"] },
-    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] }
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"] }
 ];
 HistorialService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
         providedIn: 'root'
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_3__["InAppBrowser"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"],
-        _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__["Contacts"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"]])
+        _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__["Contacts"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"],
+        _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]])
 ], HistorialService);
 
 
@@ -1255,7 +1274,8 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 
 const environment = {
-    production: false
+    production: false,
+    mapBoxToken: 'pk.eyJ1IjoiY2FtaWNoYXZlcyIsImEiOiJjank0cTkzZXowMzR5M2dwNTV1MGR6MGx2In0.sfOFrrucbR6PbhDgvLsNVA'
 };
 /*
  * For easier debugging in development mode, you can import the following file

@@ -20,6 +20,7 @@ import { AgmCoreModule } from '@agm/core';
 import {MapaPage} from './pages/mapa/mapa.page';
 import {MapaPageModule} from './pages/mapa/mapa.module';
 import { Contacts } from '@ionic-native/contacts/ngx';
+import { AdMob } from 'ionic-admob';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { Contacts } from '@ionic-native/contacts/ngx';
       HistorialService,
       InAppBrowser,
       Contacts,
+      AdMob,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

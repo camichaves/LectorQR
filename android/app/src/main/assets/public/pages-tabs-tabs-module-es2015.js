@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"home\">\r\n      <ion-icon name=\"scan-outline\"></ion-icon>\r\n      <ion-label>Scan</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"guardados\">\r\n      <ion-icon name=\"list\"></ion-icon>\r\n      <ion-label>Historial</ion-label>\r\n    </ion-tab-button>\r\n\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"light\">\r\n    <ion-tab-button tab=\"home\">\r\n      <ion-icon name=\"scan-outline\"></ion-icon>\r\n      <ion-label>Scan</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"guardados\">\r\n      <ion-icon name=\"list\"></ion-icon>\r\n      <ion-label>Historial</ion-label>\r\n    </ion-tab-button>\r\n\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n");
 
 /***/ }),
 

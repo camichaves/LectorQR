@@ -40,6 +40,8 @@ dependencies {
     implementation fileTree(dir: 'src/main/libs', include: ['*.jar'])
     implementation 'org.apache.cordova:framework:7.0.0'
     // SUB-PROJECT DEPENDENCIES START
+    implementation "com.google.android.gms:play-services-base:11.0.4"
+    implementation "com.google.android.gms:play-services-ads:11.0.4"
     implementation "com.android.support:support-v4:27.+"
     // SUB-PROJECT DEPENDENCIES END
 }

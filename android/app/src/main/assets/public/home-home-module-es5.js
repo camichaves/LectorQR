@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header [translucent]=\"true\">\r\n  <ion-toolbar>\r\n    <ion-title>\r\n     QRAPP\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content [fullscreen]=\"true\">\r\n  <ion-button expand=\"full\" color=\"primary\" (click)=\"escanear()\">Escanear</ion-button>\r\n</ion-content>\r\n";
+    __webpack_exports__["default"] = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>\r\n     QRAPP\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content [fullscreen]=\"true\">\r\n  <ion-fab vertical=\"center\" horizontal=\"center\" slot=\"fixed\">\r\n    <ion-fab-button (click)=\"escanear()\" style=\"width: 170px; height: 170px\">\r\n      Escanear\r\n    </ion-fab-button>\r\n  </ion-fab>\r\n</ion-content>\r\n";
     /***/
   },
 
@@ -130,7 +130,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n\nion-content ion-toolbar {\n  --background: translucent;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiLCJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUVBLGtCQUFBO0VBQ0EsT0FBQTtFQUNBLFFBQUE7RUFDQSxRQUFBO0VBQ0EsbUNBQUE7VUFBQSwyQkFBQTtBQ0FGOztBREdBO0VBQ0UsZUFBQTtFQUNBLGlCQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7RUFFQSxjQUFBO0VBRUEsU0FBQTtBQ0ZGOztBREtBO0VBQ0UscUJBQUE7QUNGRjs7QURLQTtFQUNFLHlCQUFBO0FDRkYiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NvbnRhaW5lciB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogMDtcclxuICByaWdodDogMDtcclxuICB0b3A6IDUwJTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbn1cclxuXHJcbiNjb250YWluZXIgc3Ryb25nIHtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbiAgbGluZS1oZWlnaHQ6IDI2cHg7XHJcbn1cclxuXHJcbiNjb250YWluZXIgcCB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyMnB4O1xyXG5cclxuICBjb2xvcjogIzhjOGM4YztcclxuXHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4jY29udGFpbmVyIGEge1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5cclxuaW9uLWNvbnRlbnQgaW9uLXRvb2xiYXIge1xyXG4gIC0tYmFja2dyb3VuZDogdHJhbnNsdWNlbnQ7XHJcbn0iLCIjY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICB0b3A6IDUwJTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xufVxuXG4jY29udGFpbmVyIHN0cm9uZyB7XG4gIGZvbnQtc2l6ZTogMjBweDtcbiAgbGluZS1oZWlnaHQ6IDI2cHg7XG59XG5cbiNjb250YWluZXIgcCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgbGluZS1oZWlnaHQ6IDIycHg7XG4gIGNvbG9yOiAjOGM4YzhjO1xuICBtYXJnaW46IDA7XG59XG5cbiNjb250YWluZXIgYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuaW9uLWNvbnRlbnQgaW9uLXRvb2xiYXIge1xuICAtLWJhY2tncm91bmQ6IHRyYW5zbHVjZW50O1xufSJdfQ== */";
+    __webpack_exports__["default"] = "#container {\n  text-align: center;\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 50%;\n  -webkit-transform: translateY(-50%);\n          transform: translateY(-50%);\n}\n\n#container strong {\n  font-size: 20px;\n  line-height: 26px;\n}\n\n#container p {\n  font-size: 16px;\n  line-height: 22px;\n  color: #8c8c8c;\n  margin: 0;\n}\n\n#container a {\n  text-decoration: none;\n}\n\nion-content {\n  --ion-background-color:#86a6df;\n}\n\nion-toolbar {\n  --background:#5068a9;\n  --color: #ffffffff;\n}\n\nion-button {\n  --background: #324e7b;\n  --color: #ffffffff;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxcaG9tZVxcaG9tZS5wYWdlLnNjc3MiLCJzcmMvYXBwL2hvbWUvaG9tZS5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxrQkFBQTtFQUVBLGtCQUFBO0VBQ0EsT0FBQTtFQUNBLFFBQUE7RUFDQSxRQUFBO0VBQ0EsbUNBQUE7VUFBQSwyQkFBQTtBQ0FGOztBREdBO0VBQ0UsZUFBQTtFQUNBLGlCQUFBO0FDQUY7O0FER0E7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7RUFFQSxjQUFBO0VBRUEsU0FBQTtBQ0ZGOztBREtBO0VBQ0UscUJBQUE7QUNGRjs7QURJQTtFQUVFLDhCQUFBO0FDRkY7O0FES0E7RUFDRSxvQkFBQTtFQUNBLGtCQUFBO0FDRkY7O0FES0E7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0FDRkYiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUucGFnZS5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiI2NvbnRhaW5lciB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG5cclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgbGVmdDogMDtcclxuICByaWdodDogMDtcclxuICB0b3A6IDUwJTtcclxuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbn1cclxuXHJcbiNjb250YWluZXIgc3Ryb25nIHtcclxuICBmb250LXNpemU6IDIwcHg7XHJcbiAgbGluZS1oZWlnaHQ6IDI2cHg7XHJcbn1cclxuXHJcbiNjb250YWluZXIgcCB7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG4gIGxpbmUtaGVpZ2h0OiAyMnB4O1xyXG5cclxuICBjb2xvcjogIzhjOGM4YztcclxuXHJcbiAgbWFyZ2luOiAwO1xyXG59XHJcblxyXG4jY29udGFpbmVyIGEge1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5pb24tY29udGVudHtcclxuXHJcbiAgLS1pb24tYmFja2dyb3VuZC1jb2xvcjojODZhNmRmO1xyXG59XHJcblxyXG5pb24tdG9vbGJhciB7XHJcbiAgLS1iYWNrZ3JvdW5kOiM1MDY4YTk7XHJcbiAgLS1jb2xvcjogI2ZmZmZmZmZmO1xyXG59XHJcblxyXG5pb24tYnV0dG9uIHtcclxuICAtLWJhY2tncm91bmQ6ICMzMjRlN2I7XHJcbiAgLS1jb2xvcjogI2ZmZmZmZmZmO1xyXG59XHJcbiIsIiNjb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgbGVmdDogMDtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XG59XG5cbiNjb250YWluZXIgc3Ryb25nIHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBsaW5lLWhlaWdodDogMjZweDtcbn1cblxuI2NvbnRhaW5lciBwIHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBsaW5lLWhlaWdodDogMjJweDtcbiAgY29sb3I6ICM4YzhjOGM7XG4gIG1hcmdpbjogMDtcbn1cblxuI2NvbnRhaW5lciBhIHtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG5pb24tY29udGVudCB7XG4gIC0taW9uLWJhY2tncm91bmQtY29sb3I6Izg2YTZkZjtcbn1cblxuaW9uLXRvb2xiYXIge1xuICAtLWJhY2tncm91bmQ6IzUwNjhhOTtcbiAgLS1jb2xvcjogI2ZmZmZmZmZmO1xufVxuXG5pb24tYnV0dG9uIHtcbiAgLS1iYWNrZ3JvdW5kOiAjMzI0ZTdiO1xuICAtLWNvbG9yOiAjZmZmZmZmZmY7XG59Il19 */";
     /***/
   },
 
@@ -183,17 +183,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _services_historial_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../services/historial.service */
     "./src/app/services/historial.service.ts");
+    /* harmony import */
+
+
+    var _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @ionic-native/admob-free/ngx */
+    "./node_modules/@ionic-native/admob-free/ngx/index.js");
 
     var HomePage =
     /*#__PURE__*/
     function () {
-      function HomePage(barcodeScanner, toastController, platform, historialService) {
+      function HomePage(barcodeScanner, toastController, platform, historialService, admobFree) {
         _classCallCheck(this, HomePage);
 
         this.barcodeScanner = barcodeScanner;
         this.toastController = toastController;
         this.platform = platform;
         this.historialService = historialService;
+        this.admobFree = admobFree;
         this.scannedcode = '';
         this.elementType = '';
       }
@@ -204,12 +211,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this = this;
 
           if (!this.platform.is('cordova')) {
-            // this.scannedcode = 'geo:-31.539989700000003,-68.558084';
+            // this.scannedcode = 'MATMSG:TO:camichavesthg@gmail.com;SUB:Holis;BODY:Tkm bebe;;';
             // this.elementType = 'mapa';
-            // this.historialService.agregarHistorial(this.scannedcode);
-            this.historialService.agregarHistorial("BEGIN:VCARD\nVERSION:2.1\nN:Kent;Clark\nFN:Clark Kent\nORG:\nTEL;HOME;VOICE:12345\nTEL;TYPE=cell:67890\nADR;TYPE=work:;;;\nEMAIL:clark@superman.com\nEND:VCARD");
-            this.scannedcode = "BEGIN:VCARD\nVERSION:2.1\nN:Kent;Clark\nFN:Clark Kent\nORG:\nTEL;HOME;VOICE:12345\nTEL;TYPE=cell:67890\nADR;TYPE=work:;;;\nEMAIL:clark@superman.com\nEND:VCARD";
-            this.elementType = 'contacto';
+            //   this.scannedcode = 'geo:-31.539989700000003,-68.53237502563692'
+            this.scannedcode = 'ERROR';
+            this.elementType = 'No usable en web';
+            this.historialService.agregarHistorial(this.scannedcode);
             this.presentToast();
             return;
           }
@@ -239,7 +246,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                     _context.next = 2;
                     return this.toastController.create({
                       message: 'Scan: ' + this.scannedcode.toString() + '.- Formato: ' + this.elementType,
-                      duration: 7500
+                      duration: 2500
                     });
 
                   case 2:
@@ -255,6 +262,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             }, _callee, this);
           }));
         }
+      }, {
+        key: "ngAfterContentInit",
+        value: function ngAfterContentInit() {
+          var bannerConfig = {
+            // add your config here
+            // for the sake of this example we will just use the test config
+            isTesting: true,
+            autoShow: true
+          };
+          this.admobFree.banner.config(bannerConfig);
+          this.admobFree.banner.prepare().then(function () {// banner Ad is ready
+            // if we set autoShow to false, then we will need to call the show method here
+          }).catch(function (e) {
+            return console.log(e);
+          });
+        }
       }]);
 
       return HomePage;
@@ -269,6 +292,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"]
       }, {
         type: _services_historial_service__WEBPACK_IMPORTED_MODULE_4__["HistorialService"]
+      }, {
+        type: _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_5__["AdMobFree"]
       }];
     };
 
@@ -280,7 +305,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./home.page.scss */
       "./src/app/home/home.page.scss")).default]
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_barcode_scanner_ngx__WEBPACK_IMPORTED_MODULE_3__["BarcodeScanner"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"], _services_historial_service__WEBPACK_IMPORTED_MODULE_4__["HistorialService"]])], HomePage);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_barcode_scanner_ngx__WEBPACK_IMPORTED_MODULE_3__["BarcodeScanner"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["ToastController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["Platform"], _services_historial_service__WEBPACK_IMPORTED_MODULE_4__["HistorialService"], _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_5__["AdMobFree"]])], HomePage);
     /***/
   }
 }]);

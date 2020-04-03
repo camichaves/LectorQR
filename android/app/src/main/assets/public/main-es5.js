@@ -186,7 +186,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button (click)=\"cerrarModal()\">\r\n        <ion-icon name=\"arrow-back-outline\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <ion-title>Mapa</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\">\r\n    <agm-marker  [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n  </agm-map>\r\n</ion-content>\r\n";
+    __webpack_exports__["default"] = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-buttons slot=\"start\">\r\n      <ion-button (click)=\"cerrarModal()\">\r\n        <ion-icon name=\"arrow-back-outline\"></ion-icon>\r\n      </ion-button>\r\n    </ion-buttons>\r\n    <ion-title>Mapa</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <agm-map [latitude]=\"lat\" [zoom]=\"zoom\" [longitude]=\"lng\" style=\"height: 100%\">\r\n    <agm-marker  [latitude]=\"lat\" [longitude]=\"lng\"></agm-marker>\r\n  </agm-map>\r\n</ion-content>\r\n\r\n";
     /***/
   },
 
@@ -1077,6 +1077,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! @ionic-native/contacts/ngx */
     "./node_modules/@ionic-native/contacts/ngx/index.js");
+    /* harmony import */
+
+
+    var _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    /*! @ionic-native/admob-free/ngx */
+    "./node_modules/@ionic-native/admob-free/ngx/index.js");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -1086,7 +1092,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       declarations: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]],
       entryComponents: [_pages_mapa_mapa_page__WEBPACK_IMPORTED_MODULE_13__["MapaPage"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(), _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"], ngx_qrcode2__WEBPACK_IMPORTED_MODULE_9__["NgxQRCodeModule"], _pages_mapa_mapa_module__WEBPACK_IMPORTED_MODULE_14__["MapaPageModule"]],
-      providers: [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"], _ionic_native_barcode_scanner_ngx__WEBPACK_IMPORTED_MODULE_10__["BarcodeScanner"], _services_historial_service__WEBPACK_IMPORTED_MODULE_11__["HistorialService"], _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_12__["InAppBrowser"], _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_15__["Contacts"], {
+      providers: [_ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"], _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_5__["SplashScreen"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"], _ionic_native_barcode_scanner_ngx__WEBPACK_IMPORTED_MODULE_10__["BarcodeScanner"], _services_historial_service__WEBPACK_IMPORTED_MODULE_11__["HistorialService"], _ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_12__["InAppBrowser"], _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_15__["Contacts"], _ionic_native_admob_free_ngx__WEBPACK_IMPORTED_MODULE_16__["AdMobFree"], {
         provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"],
         useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"]
       }],
@@ -1133,6 +1139,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.tipo = 'mapa';
       } else if (texto.startsWith('BEGIN:VCARD')) {
         this.tipo = 'contacto';
+      } else if (texto.startsWith('MATMSG:')) {
+        this.tipo = 'email';
       }
     };
     /***/
@@ -1291,7 +1299,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "agm-map {\n  height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvbWFwYS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxccGFnZXNcXG1hcGFcXG1hcGEucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9tYXBhL21hcGEucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0UsYUFBQTtBQ0FGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbWFwYS9tYXBhLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5hZ20tbWFwIHtcclxuICBoZWlnaHQ6IDMwMHB4O1xyXG59XHJcbiIsImFnbS1tYXAge1xuICBoZWlnaHQ6IDMwMHB4O1xufSJdfQ== */";
+    __webpack_exports__["default"] = "agm-map {\n  height: 300px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvbWFwYS9DOlxcVXNlcnNcXENhbWlsYVxcRG9jdW1lbnRzXFxJT05JQ1xcUVJBUFBcXHZlcnNpb240XFxMZWN0b3JRUi9zcmNcXGFwcFxccGFnZXNcXG1hcGFcXG1hcGEucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9tYXBhL21hcGEucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsYUFBQTtBQ0NGIiwiZmlsZSI6InNyYy9hcHAvcGFnZXMvbWFwYS9tYXBhLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImFnbS1tYXAge1xyXG4gIGhlaWdodDogMzAwcHg7XHJcbn1cclxuXHJcblxyXG4iLCJhZ20tbWFwIHtcbiAgaGVpZ2h0OiAzMDBweDtcbn0iXX0= */";
     /***/
   },
 
@@ -1336,13 +1344,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var MapaPage =
     /*#__PURE__*/
     function () {
-      // https://www.google.com/maps/embed/v1/place?key=AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk&q=-31.537034492705484,-68.53237502563692&zoom=18
       function MapaPage(modalController) {
         _classCallCheck(this, MapaPage);
 
         this.modalController = modalController;
-        this.API = 'place';
-        this.KEY = 'AIzaSyDJTLIfUHhSd2hllr6UUjKdMHTeRUVejkk';
         this.zoom = 15;
       }
 
@@ -1373,10 +1378,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           console.log('Latitud: ' + coordsArray[0].replace('geo:', ''));
           console.log('Longitud: ' + coordsArray[1]); // tslint:disable-next-line:radix
 
-          this.lat = parseFloat(coordsArray[0].replace('geo:', '')); //-31.539989700000003
-          // tslint:disable-next-line:radix
+          this.lat = parseFloat(coordsArray[0].replace('geo:', '')); // tslint:disable-next-line:radix
 
-          this.lng = parseFloat(coordsArray[1]); //-68.558084
+          this.lng = parseFloat(coordsArray[1]);
         }
       }, {
         key: "cerrarModal",
@@ -1386,7 +1390,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "ngAfterContentInit",
         value: function ngAfterContentInit() {
-          this.cargaMapa(); // this.getLocation();
+          this.cargaMapa();
         }
       }]);
 
@@ -1473,11 +1477,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @ionic-native/contacts/ngx */
     "./node_modules/@ionic-native/contacts/ngx/index.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var HistorialService =
     /*#__PURE__*/
     function () {
-      function HistorialService(inAppBrowser, modalController, contacts, platform, toastController) {
+      function HistorialService(inAppBrowser, modalController, contacts, platform, toastController, router) {
         _classCallCheck(this, HistorialService);
 
         this.inAppBrowser = inAppBrowser;
@@ -1485,6 +1495,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.contacts = contacts;
         this.platform = platform;
         this.toastController = toastController;
+        this.router = router;
         this.historial = [];
       }
 
@@ -1515,9 +1526,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               this.crearContacto(scanData.info);
               break;
 
+            case 'email':
+              this.sendEmail(scanData.info);
+              break;
+
             default:
               console.error('Tipo no soportado');
           }
+        }
+      }, {
+        key: "sendEmail",
+        value: function sendEmail(texto) {
+          var url1 = texto;
+          url1 = url1.replace('MATMSG:TO:', 'mailto:');
+          url1 = url1.replace(';SUB:', '?Subject=');
+          url1 = url1.replace(';BODY:', '&Body=');
+          url1 = url1.replace(' ', '%20');
+          url1 = url1.replace(';;', '');
+          this.inAppBrowser.create(url1, '_systems');
         }
       }, {
         key: "crearContacto",
@@ -1675,12 +1701,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"]
       }, {
         type: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]
       }];
     };
 
     HistorialService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_3__["InAppBrowser"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"], _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__["Contacts"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"]])], HistorialService);
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_native_in_app_browser_ngx__WEBPACK_IMPORTED_MODULE_3__["InAppBrowser"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ModalController"], _ionic_native_contacts_ngx__WEBPACK_IMPORTED_MODULE_6__["Contacts"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["Platform"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["ToastController"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["Router"]])], HistorialService);
     /***/
   },
 
@@ -1714,7 +1742,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     var environment = {
-      production: false
+      production: false,
+      mapBoxToken: 'pk.eyJ1IjoiY2FtaWNoYXZlcyIsImEiOiJjank0cTkzZXowMzR5M2dwNTV1MGR6MGx2In0.sfOFrrucbR6PbhDgvLsNVA'
     };
     /*
      * For easier debugging in development mode, you can import the following file

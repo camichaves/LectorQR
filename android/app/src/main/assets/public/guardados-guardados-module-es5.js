@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\r\n  <ion-toolbar color=\"primary\">\r\n    <ion-title>Historial</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-item *ngFor=\"let data of this.historial; let i = index\">\r\n      <ion-label class=\"ion-text-wrap\">\r\n        <ion-button (click)=\"abrirScan(i)\"> <p>{{data.info}}</p>\r\n        </ion-button>\r\n      </ion-label>\r\n      <ion-text color=\"primary\">\r\n        <h3>{{data.tipo}}</h3>\r\n      </ion-text>\r\n    </ion-item>\r\n  </ion-list>\r\n</ion-content>\r\n";
+    __webpack_exports__["default"] = "<ion-header>\r\n  <ion-toolbar>\r\n    <ion-title>Historial</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n  <ion-list>\r\n    <ion-grid>\r\n    <ion-item *ngFor=\"let data of this.historial; let i = index\">\r\n      <ion-label>\r\n        <ion-button (click)=\"abrirScan(i)\" size=\"small\">\r\n          <p>{{data.info}}</p>\r\n        </ion-button>\r\n      </ion-label>\r\n      <ion-text>\r\n        <h3>{{data.tipo}}</h3>\r\n      </ion-text>\r\n    </ion-item>\r\n    </ion-grid>\r\n  </ion-list>\r\n</ion-content>\r\n";
     /***/
   },
 
@@ -174,7 +174,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL2d1YXJkYWRvcy9ndWFyZGFkb3MucGFnZS5zY3NzIn0= */";
+    __webpack_exports__["default"] = "ion-content {\n  --ion-background-color:#86a6df;\n}\n\nion-toolbar {\n  --background:#5068a9;\n  --color: #ffffffff;\n}\n\nion-button {\n  --background: #324e7b;\n  --color: #ffffffff;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvZ3VhcmRhZG9zL0M6XFxVc2Vyc1xcQ2FtaWxhXFxEb2N1bWVudHNcXElPTklDXFxRUkFQUFxcdmVyc2lvbjRcXExlY3RvclFSL3NyY1xcYXBwXFxwYWdlc1xcZ3VhcmRhZG9zXFxndWFyZGFkb3MucGFnZS5zY3NzIiwic3JjL2FwcC9wYWdlcy9ndWFyZGFkb3MvZ3VhcmRhZG9zLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVFLDhCQUFBO0FDQUY7O0FER0E7RUFDRSxvQkFBQTtFQUNBLGtCQUFBO0FDQUY7O0FER0E7RUFDRSxxQkFBQTtFQUNBLGtCQUFBO0FDQUYiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9ndWFyZGFkb3MvZ3VhcmRhZG9zLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi1jb250ZW50e1xyXG5cclxuICAtLWlvbi1iYWNrZ3JvdW5kLWNvbG9yOiM4NmE2ZGY7XHJcbn1cclxuXHJcbmlvbi10b29sYmFyIHtcclxuICAtLWJhY2tncm91bmQ6IzUwNjhhOTtcclxuICAtLWNvbG9yOiAjZmZmZmZmZmY7XHJcbn1cclxuXHJcbmlvbi1idXR0b24ge1xyXG4gIC0tYmFja2dyb3VuZDogIzMyNGU3YjtcclxuICAtLWNvbG9yOiAjZmZmZmZmZmY7XHJcbn1cclxuIiwiaW9uLWNvbnRlbnQge1xuICAtLWlvbi1iYWNrZ3JvdW5kLWNvbG9yOiM4NmE2ZGY7XG59XG5cbmlvbi10b29sYmFyIHtcbiAgLS1iYWNrZ3JvdW5kOiM1MDY4YTk7XG4gIC0tY29sb3I6ICNmZmZmZmZmZjtcbn1cblxuaW9uLWJ1dHRvbiB7XG4gIC0tYmFja2dyb3VuZDogIzMyNGU3YjtcbiAgLS1jb2xvcjogI2ZmZmZmZmZmO1xufSJdfQ== */";
     /***/
   },
 
